@@ -2,6 +2,11 @@
 require_once('countries.php');
 
 $countries=new countries();
+if($_POST)
+{
+    $countries->form();
+    die();
+}
 $countries_dict=$countries->show_countries();
 ?>
 <!doctype html>
@@ -33,7 +38,7 @@ $countries_dict=$countries->show_countries();
             }
         ?>
     </div>
-    <form action="" method="post">
+    <form action="index.php" method="post">
         <input type="text" name="country_name" placeholder="Название страны" maxlength="50">
         <textarea name="country_descr" cols="25" rows="2" placeholder="Краткое описание страны"></textarea>
         <button name="country_add" value="add">Добавить страну</button>
