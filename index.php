@@ -2,7 +2,8 @@
 require_once('countries.php');
 
 $countries = new countries();
-if ($_POST) {
+if ($_POST)
+{
     $countries->form();
     die();
 }
@@ -28,7 +29,8 @@ $countries_dict = $countries->show_countries();
     <div class="row">
         <div class="content">
             <?php
-            foreach ($countries_dict as $item) {
+            foreach ($countries_dict as $item)
+            {
                 ?>
                 <div class="row">
                     <div class="col-3 left-column"><?= htmlspecialchars($item['country_name']) ?></div>
@@ -44,7 +46,7 @@ $countries_dict = $countries->show_countries();
             <div class="form-row">
                 <form action="index.php" method="post">
                     <input type="text" class="form-control-inline country_name" name="country_name"
-                           placeholder="Название страны" maxlength="50">
+                           placeholder="Название страны" maxlength="50" required>
                     <textarea class="form-control-inline country_descr" name="country_descr" cols="30" rows="1"
                               placeholder="Описание страны"
                               maxlength="200"></textarea>

@@ -1,63 +1,75 @@
-* {
+*
+{
     padding: 0;
     margin: 0;
     font: 20px Arial;
 }
 
-body {
+body
+{
     height: 100vh;
 }
 
-.left-column, .right-column {
+.left-column, .right-column
+{
     padding: 5px;
     text-align: center;
     word-break: break-all;
 }
 
-.left-column {
+.left-column
+{
     background-color: #f1b0b7;
 }
 
-.right-column {
+.right-column
+{
     background-color: #ffeeba;
 }
 
-.header {
+.header
+{
     padding: 10px 0;
     box-sizing: border-box;
 }
 
-.header * {
+.header *
+{
     text-align: center;
     font: bold 24px Arial;
 }
 
-.country_descr, .country_name, .country_add {
+.country_descr, .country_name, .country_add
+{
     padding: 5px;
 }
 
-.country_descr {
+.country_descr
+{
     vertical-align: middle;
 }
 
-.row {
+.row
+{
     margin: 0;
 }
 
-.content {
+.content
+{
     height: 90vh;
     overflow: auto;
     flex: 1;
 }
 
-.add-country-form {
+.add-country-form
+{
     padding: 10px 0;
     box-sizing: border-box;
     flex: 0;
 }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1200px)
+{
     .country_descr, .country_name, .country_add {
         width: 100%;
         margin-top: 5px;
