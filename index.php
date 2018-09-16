@@ -1,6 +1,5 @@
 <?php
 require_once('countries.php');
-
 $countries = new countries();
 if ($_POST)
 {
