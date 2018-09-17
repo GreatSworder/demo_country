@@ -21,7 +21,10 @@ body
 {
     background-color: #f1b0b7;
 }
-
+.animation_column
+{
+    background-color: #b4ffc9;
+}
 .right-column
 {
     background-color: #ffeeba;

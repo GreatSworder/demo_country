@@ -49,7 +49,7 @@ $countries_dict = $countries->show_countries();
                     <textarea class="form-control-inline country_descr" name="country_descr" cols="30" rows="1"
                               placeholder="Описание страны"
                               maxlength="200"></textarea>
-                    <button class="btn btn-primary country_add" name="country_add" value="add">Добавить страну</button>
+                    <button class="btn btn-primary country_add" id="button_add_country" name="country_add" value="add" onclick="change_columns_color()">Добавить страну</button>
                 </form>
             </div>
         </div>
@@ -58,5 +58,6 @@ $countries_dict = $countries->show_countries();
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/tooltip.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/animation_columns.js"></script>
 </body>
 </html>

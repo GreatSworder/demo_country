@@ -41,7 +41,7 @@ class countries
             $this->add_countries();
         else
             return;
-        //Выполняется только была нажата кнопка формы
+        //Выполняется только если была нажата кнопка формы
         header('Location:index.php');
     }
 
